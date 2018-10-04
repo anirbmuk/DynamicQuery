@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE AppModule SYSTEM "jbo_03_01.dtd">
+<!---->
+<AppModule
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="QueryModule"
+  Version="12.1.3.13.26"
+  InheritPersonalization="merge"
+  ClearCacheOnRollback="true"
+  ComponentClass="blog.anirbanm.query.model.am.QueryModuleImpl"
+  ComponentInterface="blog.anirbanm.query.model.am.common.QueryModule">
+  <DesignTime>
+    <Attr Name="_isCodegen" Value="true"/>
+  </DesignTime>
+  <ViewUsage
+    Name="EmployeesVO1"
+    ViewObjectName="blog.anirbanm.query.model.vo.EmployeesVO"/>
+  <ClientInterface
+    Name="__clientInterface">
+    <Method
+      Name="searchRightWay"
+      MethodName="searchRightWay">
+      <Return
+        Name="_return_type_"
+        Type="void"/>
+      <Parameter
+        Name="firstName"
+        Type="java.lang.String"/>
+      <Parameter
+        Name="lastName"
+        Type="java.lang.String"/>
+    </Method>
+    <Method
+      Name="searchWrongWay"
+      MethodName="searchWrongWay">
+      <Return
+        Name="_return_type_"
+        Type="void"/>
+      <Parameter
+        Name="firstName"
+        Type="java.lang.String"/>
+      <Parameter
+        Name="lastName"
+        Type="java.lang.String"/>
+    </Method>
+  </ClientInterface>
+</AppModule>
